@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: #F3F5FC;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.areaDeEntrada {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.areaDeSaida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem;
+    width: 25rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.textoDeEntrada, .textoDeSaida {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.textoDeEntrada {
+    font-size: 2rem;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    flex-grow: 1;
+    padding-top: 15%;
+}
+
+.textoDeSaida {
+    font-size: 1rem;
+    background-color: white;
+    color: #495057;
+    display: none;
+    margin: 1.5rem;
+    position: relative;
+}
+
+.botoesDeEntrada {
+    display: flex;
+    gap: 2rem;
+}
+
+.botoesDeEntrada__criptografar, .botoesDeEntrada__descriptografar {
+    width: 20.5rem;
+    height: 4.1rem;
+    border-radius: 24px;
+}
+
+.botoesDeEntrada__criptografar {
+    border: none;
+    background-color: #0A3871;
+    color: white;
+}
+
+.botoesDeEntrada__descriptografar {
+    background-color: #F3F5FC;
+    border-color: #0A3871;
+}
+
+.mensagem {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 40%;
+}
+
+.botaoCopiar {
+    width: 21rem;
+    height: 4.1rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    border-color: #0A3871;
+    display: none;
+    margin-bottom: 2rem;
+}
+
+.botoesDeEntrada__criptografar:hover, .botoesDeEntrada__descriptografar:hover, .botaoCopiar:hover {
+    background-color: #078ed7;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    color: #495057;   
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 1340px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 5%;
+        margin-bottom: 2%;
+        padding: 0;
+    }
+    .imagemRapaz {
+        display: none;
+    }
+    .areaDeEntrada {
+        padding-top: 7%;
+        height: 70%;
+    }
+    .areaDeSaida {
+        width:auto;
+        height: auto;
+        margin: 5%;
+    }
+    .botoesDeEntrada {
+        justify-content: center;
+    }
+    .textoDeEntrada {
+        height: 20rem;
+        padding-top: 0;
+    }
+    .textoDeSaida {
+        width: -webkit-fill-available;
+        max-height: 10em;
+    }
+    .mensagem {
+        margin: 2%;
+    }
+    .botaoCopiar {
+        width: 60%;
+    }
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+        position: relative;
+    }
+}
+
+@media (max-width: 376px) {
+    .botoesDeEntrada {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}

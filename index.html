@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>
+</head>
+    <body>
+        <header>
+            <img class="logo" src="/assets/logo.png" alt="Logo da Alura">
+        </header>
+        <section class="areaDeEntrada">
+            <textarea class="textoDeEntrada" placeholder="Digite seu texto" autofocus></textarea>   
+            <div class="observacao">
+                <img src="/assets/exclamacao.png">
+                <label for="observacao">Apenas letras minúsculas e sem acento.</label>
+            </div>
+            <div class="botoesDeEntrada">
+                <button class="botoesDeEntrada__criptografar" onclick="botaoParaEncriptar()">Criptografar</button>
+                <button class="botoesDeEntrada__descriptografar" onclick="botaoParaDescriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="areaDeSaida">
+                <textarea class="textoDeSaida" cols="30" rows="30" contenteditable="true" disabled></textarea>
+                <button class="botaoCopiar" onclick="copiar()">Copiar</button>
+                <div class="mensagem">
+                    <img class="imagemRapaz" src="assets/rapaz.png" alt="Rapaz olhando uma lupa">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <h5>Digite um texto que você deseja criptografar ou descriptografar.</h>
+                </div>
+        </section>
+        <footer class="rodape">
+            <h3>Desenvolvido por <a class="link" href="https://github.com/zzzw7">Lígia Cristina</a></h3>
+        </footer>
+    </body> 
+    <script src="script.js"></script>
+</html>
