@@ -10,7 +10,7 @@ Aqui estão as "chaves" de criptografia usadas:
 |o|ober|
 |u|ufat| 
 
-O projeto pode ser visto <a href="https://zzzw7.github.io."> clicando aqui.</a>
+O projeto pode ser visto <a href="https://zzzw7.github.io/codificador-de-texto/"> clicando aqui.</a>
 
 ## 📋 Adendos
 
